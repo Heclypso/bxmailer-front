@@ -33,11 +33,11 @@ function comprimeJavaScript(){
     .pipe(gulp.dest('dist/scripts'))
 }
 
-function gulpWatch() {
-  return watch('./src/styles/*.less', {ignoreInitial: false}, gulp.series(compilaLess)), 
-  watch('./src/*.html', {ignoreInitial: false}, gulp.series(criaReplace, replaceTemplate, apagaReplace)),
-  watch('./src/scripts/*.js', {ignoreInitial: false}, gulp.series(comprimeJavaScript));
-}
+// function gulpWatch() {
+//   return watch('./src/styles/*.less', {ignoreInitial: false}, gulp.series(compilaLess)), 
+//   watch('./src/*.html', {ignoreInitial: false}, gulp.series(criaReplace, replaceTemplate, apagaReplace)),
+//   watch('./src/scripts/*.js', {ignoreInitial: false}, gulp.series(comprimeJavaScript));
+// }
 
 function comprimeImagens(callback) {
   gulp.src('./src/images/*')
@@ -48,9 +48,11 @@ function comprimeImagens(callback) {
 
 export default gulp.series(comprimeHtml, compilaLess, comprimeJavaScript, comprimeImagens)
 
-export const watchFiles = () => {
-  gulpWatch(); 
-};
-
+gulp.task('watch', (done) => {
+  watch('./src/styles/*.less', {ignoreInitial: false}, gulp.series(compilaLess)), 
+  watch('./src/*.html', {ignoreInitial: false}, gulp.series(comprimeHtml)),
+  watch('./src/scripts/*.js', {ignoreInitial: false}, gulp.series(comprimeJavaScript));
+  done();
+});
 
 
