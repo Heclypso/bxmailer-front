@@ -3,7 +3,7 @@ const botao = document.getElementsByTagName('button')[0].addEventListener('click
     const subject  = 'Feedback Do Usuário'
     const text = document.getElementById('feedbackMessage').value
 
-    const emailInfo = { // definição das informações usadas na linha 27 do arquivo backend
+    const emailInfo = { // definição das informações usadas nas linhas 30 ~ 35 na api
         to: email,
         subject: subject,
         text: text
@@ -15,7 +15,7 @@ const botao = document.getElementsByTagName('button')[0].addEventListener('click
             method: "POST", // metodo http para enviar as informações
             headers: { "Content-Type": "application/json" }, // definição do cabeçalho da requisição
             body: JSON.stringify(emailInfo), // converte as informações para json
-            mode: "cors",
+            mode: "cors", // habilita a verificação da baseurl do cors
         });
 
         const result = await response.json();
