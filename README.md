@@ -7,15 +7,21 @@ O toast de erro informa apenas erros relacionados ao preenchimento dos formulár
 Tecnologias utilizadas:
 
 JQuery - responsável pela validação dos formulários.
+
 Aria attributes - responsável por garantir que os leitores de tela consigam ler corretamente o formulário e as mensagens de erro(acessibilidade).
 
 Gulp - criação de tarefas e automação, entre as tarefas criados no gulp estão tarefas responsáveis por, comprimir o html as imagens e o javascript, compilar o less, e uma tarefa de watch responsável por observar as mudanças nos arquivos de html e javascript e executar as determinadas tarefas quando ocorrer uma modificação nos mesmos. A transpilação do babel é chamada por um .pipe na tarefa comprimeJavascript.
+
 Less - pré-processador css
 
 Nodemailer - envio de e-mails.
+
 Babel - transpilação do javascript para garantir o funcionamento do código em navegadores obsoletos, browserslist configurado para > 0.25% dos navegadores globais.
+
 Express - criação de rotas de navegação
+
 Jest.js - teste local do javascript
+
 Cors - middleware de comunicação entre o frontend e o backend, apenas requisições options e post vindas de https://bxmailer-front.vercel.app vão ser aceitas pela api. A requisição options é a requisição padrão do cors para verificar se a baseurl tem o acesso permitido para usar a api e a requisição post é a que envia as informações para o nodemailer enviar os e-mails.
 
 Projeto:
