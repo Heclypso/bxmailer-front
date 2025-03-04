@@ -2,7 +2,9 @@ O projeto foi desenvolvido com intuito de criar um sistema de envio de e-mails h
 
 O projeto não é uma cópia direta do https://putsmail.com ele é apenas uma inspiração, muitas coisas foram modificadas.
 
-O toast de erro informa apenas erros relacionados ao preenchimento dos formulários, se por algum motivo acontecer um erro na api a própria api irá retornar um erro no console do navegador do frontend com o código 500 "Erro ao enviar email" seguido da causa do erro. Esse comportamento pode ser observado se você clonar o repositório e tentar enviar um email localmente com o projeto rodando no localhost ou em uma baseurl diferente da especificada nas permissões do cors.
+O toast de erro informa apenas erros relacionados ao preenchimento dos formulários, se por algum motivo acontecer um erro na api a própria api irá retornar um erro no console do navegador do frontend com o código 500 "Erro ao enviar email" seguido da causa do erro. 
+
+Esse comportamento pode ser observado se você clonar o repositório e tentar enviar um email localmente com o projeto rodando no localhost ou em uma baseurl diferente da especificada nas permissões do cors.
 
 Tecnologias utilizadas:
 
