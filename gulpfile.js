@@ -20,17 +20,17 @@ function compilaLess() {
 };
 
 function comprimeHtml() {
-  return gulp.src('src/*.html')
+  return gulp.src('./src/*.html')
   .pipe(htmlmin({ collapseWhitespace: true}))
-  .pipe(gulp.dest('dist/'))
+  .pipe(gulp.dest('./dist/'))
 }
 
 function comprimeJavaScript(){
-  return gulp.src('src/scripts/*.js')
+  return gulp.src('./src/scripts/*.js')
     .pipe(babel()) 
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('dist/scripts'))
+    .pipe(gulp.dest('./dist/scripts'))
 }
 
 function comprimeImagens(callback) {
