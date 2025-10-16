@@ -4,6 +4,8 @@ O projeto foi desenvolvido com intuito de criar um sistema de envio de e-mails h
 
 ## Tecnologias Usadas
 
+- **HTML**: criação do esqueleto do projeto;
+
 - **JQuery**: responsável pela validação dos formulários;
 
 - **Aria attributes**: responsável por garantir que os leitores de tela consigam ler corretamente o formulário e as mensagens de erro(acessibilidade);
