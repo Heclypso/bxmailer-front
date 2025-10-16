@@ -29,7 +29,8 @@ O projeto foi desenvolvido com intuito de criar um sistema de envio de e-mails h
 - Desenvolvimento de páginas WEB;
 - Desenvolvimento de layouts responsivos;
 - Validação de formulários;
-- Acessibilidade
+- Acessibilidade;
+- Transpilação.
 
 ## Passos de instalação
 
