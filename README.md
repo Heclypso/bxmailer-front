@@ -20,8 +20,6 @@ O projeto foi desenvolvido com intuito de criar um sistema de envio de e-mails h
 
 - **Express**: criação de rotas de navegação;
 
-- **Jest.js** teste local do javascript;
-
 - **Cors**: middleware de comunicação entre o frontend e o backend.
   
 ## Técnicas e fundamentos desenvolvidos
